@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="baidu-vod:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="baidu-vod.war">
+      <element id="artifact" artifact-name="baidu-vod:war exploded" />
+    </root>
+  </artifact>
+</component>
