@@ -20,7 +20,7 @@ public class VodController {
     private VodService vodService;
 
     /**
-     * 通过媒体id，查询媒体详细信息
+     * 通过媒体id，查询媒体详细信息  mda-hbrswjs5qd1mgw5d
      */
     @RequestMapping(value = "/{message_id}/mv", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public GetMediaResourceResponse getMsg4App(@PathVariable String message_id) {

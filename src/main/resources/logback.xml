@@ -8,7 +8,7 @@
         </layout>
     </appender>
 
-    <appender name="VECTOR_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="FILE_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${catalina.base}/logs/vector.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${catalina.base}/logs/vector.%d{yyyy-MM-dd}.log</fileNamePattern>
@@ -24,14 +24,14 @@
         <appender-ref ref="STDOUT"/>
     </logger> -->
 
-    <logger name="com.xiaopeng" level="debug" additivity="false">
-        <appender-ref ref="VECTOR_LOG"/>
+    <logger name="com.zl" level="debug" additivity="false">
+        <appender-ref ref="FILE_LOG"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <root level="error">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="VECTOR_LOG"/>
+        <appender-ref ref="FILE_LOG"/>
     </root>
 
 </configuration>

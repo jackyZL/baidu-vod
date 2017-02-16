@@ -9,6 +9,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
 	<!-- 打开Spring的Annotation支持 -->
+    <context:component-scan base-package="com.zl" />
 	<context:annotation-config />
 
 	<!-- 引入配置文件 -->  

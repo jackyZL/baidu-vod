@@ -11,8 +11,8 @@ public class VodClientUtil {
 
     private static VodClient vodClient;
 
-    private static final String ACCESS_KEY_ID = "<AK>";
-    private static final String SECRET_ACCESS_KEY = "<SK>";
+    private static final String ACCESS_KEY_ID = "0c057618978a4a70b7a8819f0b478b48";
+    private static final String SECRET_ACCESS_KEY = "c3358cfa9a3947cfbeac877f6cc1a37a";
 
     public static VodClient getClient() {
         if (vodClient == null) {

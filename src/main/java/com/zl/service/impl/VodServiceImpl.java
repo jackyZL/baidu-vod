@@ -4,6 +4,8 @@ import com.baidubce.services.vod.VodClient;
 import com.baidubce.services.vod.model.GetMediaResourceResponse;
 import com.zl.service.VodService;
 import com.zl.util.VodClientUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,8 +15,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class VodServiceImpl implements VodService{
 
+
+    private static final Logger logger = LoggerFactory.getLogger(VodServiceImpl.class);
+
+
     @Override
     public GetMediaResourceResponse getMediaResource(String mediaId) {
+
+        logger.debug(mediaId);
 
         VodClient  vodClient = VodClientUtil.getClient();
         GetMediaResourceResponse response = vodClient.getMediaResource(mediaId);
