@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.xiaopeng.controller" />
+	<context:component-scan base-package="com.zl.controller" />
 	
 	<context:property-placeholder location="classpath:conf/*.properties" />  
 
@@ -20,23 +20,19 @@
 	</bean>
 
 	<!-- 静态资源的映射 -->
-	<mvc:resources location="/resources/css/" mapping="/resources/css/**" />
-	<mvc:resources location="/resources/css/font" mapping="/resources/css/font/**" />
-	<mvc:resources location="/resources/css/fonts" mapping="/resources/css/font/s**" />
-	<mvc:resources location="/resources/js/" mapping="/resources/js/**" />
-	<mvc:resources location="/resources/images/" mapping="/resources/images/**" />
-	<mvc:resources location="/resources/images/layouts" mapping="/resources/images/layouts/**" />
+	<!--<mvc:resources location="/resources/css/" mapping="/resources/css/**" />-->
+
 
 
 	<!-- 鉴权拦截器配置 -->
-	<mvc:interceptors>
+	<!--<mvc:interceptors>
 		<mvc:interceptor>
-			<!-- 拦截所有请求 -->
+			&lt;!&ndash; 拦截所有请求 &ndash;&gt;
 			<mvc:mapping path="/**"/>
 			<mvc:exclude-mapping path="/login/**"/>
 			<mvc:exclude-mapping path="/resources/**"/>
 			<bean class="com.xiaopeng.util.AuthenticationInterception"/>
 		</mvc:interceptor>
-	</mvc:interceptors>
+	</mvc:interceptors>-->
 
 </beans>
