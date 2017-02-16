@@ -1,5 +1,7 @@
 package com.zl.service;
 
+import com.baidubce.services.vod.model.GetMediaResourceResponse;
+
 /**
  * Created by jacky on 2017/2/16.
  */
@@ -10,7 +12,7 @@ public interface VodService {
      *
      * @param mediaId
      */
-    public void getMediaResource( String mediaId);
+    public GetMediaResourceResponse getMediaResource(String mediaId);
 
 
 }

@@ -31,6 +31,6 @@
         <property name="ignoreResourceNotFound" value="true" />
     </bean>
 
-	<!--<import resource="classpath*:conf/spring-*.xml"></import>-->
+	<import resource="classpath*:conf/spring-*.xml"></import>
 
 </beans>
